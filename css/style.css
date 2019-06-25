@@ -33,6 +33,10 @@ header a {
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
 }
 .hero-image h1, .hero-image h2 {
     color: #FAF9FA;
@@ -77,4 +81,38 @@ main blockquote:before {
 }
 main blockquote p {
   display: inline;
+}
+
+.hero-text {
+  flex: 3;
+}
+
+.next-button {
+  min-width: 96px;
+  min-height: 48px;
+  position: relative;
+  float: right;
+  order: 1;
+  border-style: none;
+  background-color: rgba(0, 0 ,0, 0);
+  color: white;
+  font-size: 1rem;
+}
+
+.next-button:focus, .previous-button:focus {
+  background-color: rgba(0, 0 ,0, 0.3);
+}
+
+.next-button:hover, .previous-button:hover {
+  background-color: rgba(0, 0 ,0, 0.3);
+}
+
+.previous-button {
+  min-width: 96px;
+  min-height: 48px;
+  order: -1;
+  border-style: none;
+  background-color: rgba(0, 0 ,0, 0);
+  color: white;
+  font-size: 1rem;
 }

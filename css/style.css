@@ -23,9 +23,30 @@ header a {
     overflow: hidden; 
 }
 
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background: transparent; */
+    background: blue;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__button--left {
+    left: 20px;
+}
+
+.carousel__button--right {
+    right: 20px;
+}
+.carousel__button img {
+    width: 10px;
+}
+
 .carousel__track_container {
     background: lightpink;
-    padding: 10px;
+    height: 50vh;
 }
 
 .carousel__track {
@@ -34,12 +55,33 @@ header a {
     list-style: none;
 }
 
-.carousel_slide {
+.carousel__slide {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
 }
+
+.carousel__nav {
+    background: pink;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 25%;
+    width: 20px;
+    height: 20px;
+    background: brown;
+    margin: 0 12px;
+}
+
+.carousel__indicator.current-slide {
+    background: rgba(0, 0, 0, .75);
+}
+
 .hero-image {
     position: relative;
     min-height: 400px;

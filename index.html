@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Welcome | Ainulindalë</title>
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <!--[if IE]>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome | Ainulindalë</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-    </head>
-    <body id="home">
-        <header>
-            <a href="./">Ainulindalë</a>
-        </header>
-        <section class="hero-image">
-            <div class="image" style="background-image: url(./images/hero-image-0.jpg)">
-                <h1>Ainulindalë</h1>
-                <h2>The Music of the Ainur</h2>
+</head>
+
+<body id="home">
+    <header>
+        <a href="./">Ainulindalë</a>
+    </header>
+    <div class="carousel">
+        <button class="carousel__button carousel__button--left">
+            <img src="" alt="">
+        </button>
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide">
+                        <div class="hero-image" style="background-image: url(./images/hero-image-0.jpg)">
+                            <h1>Ainulindalë</h1>
+                            <h2>The Music of the Ainur</h2>
+                        </div>
+                    </section>
+                </li>
+                <li class="carousel__slide">
+                    <section class="hero-image">
+                    <div class="image" style="background-image: url(./images/hero-image-1.jpg)">
+                        <!-- <h1>Ainulindalë</h1>
+                        <h2>The Music of the Ainur</h2> -->
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="hero-image" style="background-image: url(./images/hero-image-2.jpg)">
+                        <!-- <h1>Ainulindalë</h1>
+                        <h2>The Music of the Ainur</h2> -->
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="hero-image" style="background-image: url(./images/hero-image-3.jpg)">
+                        <!-- <h1>Ainulindalë</h1>
+                        <h2>The Music of the Ainur</h2> -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
+                <img src="" alt="">
+            </button>
+
+            <div class="carousel__nav">
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
             </div>
-        </section>
-        <main>
+    </div>
+    <main>
         <blockquote cite="http://ae-lib.org.ua/texts-c/tolkien__the_silmarillion__en.htm#ainulindale">
             The Silmarillion, now published four years after the death of its author, is an
             account of the Elder Days, or the First Age of the World. In The Lord of the
@@ -45,8 +86,8 @@
             he had yet revealed; and the glory of its beginning and the splendour of its
             end amazed the Ainur, so that they bowed before Ilúvatar and were silent.
         </p>
-        </main>
-        <script src="./scripts/app.js"></script>
-    </body>
-</html>
+    </main>
+    <script src="./scripts/app.js"></script>
+</body>
 
+</html>

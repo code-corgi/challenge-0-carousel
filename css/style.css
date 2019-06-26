@@ -27,7 +27,7 @@ header a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* background: transparent; */
+    background: transparent;
     background: blue;
     border: 0;
     cursor: pointer;
@@ -35,24 +35,30 @@ header a {
 
 .carousel__button--left {
     left: 20px;
-}
+} 
 
 .carousel__button--right {
     right: 20px;
-}
+}  
+
 .carousel__button img {
-    width: 10px;
-}
+    width: 50px;
+} 
 
 .carousel__track_container {
     background: lightpink;
-    height: 50vh;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
 }
 
 .carousel__track {
     padding: 0;
     margin: 0;
     list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 950ms ease-in;
 }
 
 .carousel__slide {
@@ -85,13 +91,15 @@ header a {
 .hero-image {
     position: relative;
     min-height: 400px;
-    height: 50vh;
+    height: 50%;
+    width: 100%;
     overflow: hidden;
+    object-fit: cover;
 }
 .hero-image .image {
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover no-repeat;
     max-width: 100%;
     position: absolute;
     z-index: 0;

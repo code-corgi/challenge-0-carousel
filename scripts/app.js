@@ -4,22 +4,31 @@ let position = 0;
 
 function nextImg() {
   position++;
-  if(position > 3) {
-    position = 0;
+  fetch(`https://sgonzo3.github.io/challenge-0-carousel/images/hero-image-${position}.jpg`).then(resp => {
+    if(resp.ok) {
+      img.style['background-image'] = `url("./images/hero-image-${position}.jpg")`;
+    } else {
+      position = 0;
+      img.style['background-image'] = `url("./images/hero-image-${position}.jpg")`;
+    }
   }
-  img.style['background-image'] = `url("./images/hero-image-${position}.jpg")`;
+);
 }
 
 function previousImg() {
   position--;
-  if(position < 0) {
-    position = 3;
+  fetch(`https://sgonzo3.github.io/challenge-0-carousel/images/hero-image-${position}.jpg`).then(resp => {
+    console.log(resp);
+    if(resp.ok) {
+      img.style['background-image'] = `url("./images/hero-image-${position}.jpg")`;
+    } else {
+      position = 3;
+      img.style['background-image'] = `url("./images/hero-image-${position}.jpg")`;
+    }
   }
-  img.style['background-image'] = `url("./images/hero-image-${position}.jpg")`;
+);
 }
 
-const nextButton = img.querySelector('.next-button').addEventListener('click', nextImg);
+img.querySelector('.next-button').addEventListener('click', nextImg);
 
-const previousButton = img.querySelector('.previous-button').addEventListener('click', previousImg);
-
-// img.addEventListener('click', changeImg);
+img.querySelector('.previous-button').addEventListener('click', previousImg);

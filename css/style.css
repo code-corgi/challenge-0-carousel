@@ -37,6 +37,8 @@ header a {
     flex-direction: row;
     justify-content: space-between;
     align-content: stretch;
+    transition: 200ms ease-in-out;
+    /* transform: translateX(100%); */
 }
 .hero-image h1, .hero-image h2 {
     color: #FAF9FA;
@@ -97,14 +99,13 @@ main blockquote p {
   background-color: rgba(0, 0 ,0, 0);
   color: white;
   font-size: 1rem;
+  transition: 200ms ease-in-out;
 }
 
-.next-button:focus, .previous-button:focus {
+.next-button:focus, .next-button:hover {
   background-color: rgba(0, 0 ,0, 0.3);
-}
-
-.next-button:hover, .previous-button:hover {
-  background-color: rgba(0, 0 ,0, 0.3);
+  box-shadow: -1vw 0 1vw rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
 }
 
 .previous-button {
@@ -115,4 +116,11 @@ main blockquote p {
   background-color: rgba(0, 0 ,0, 0);
   color: white;
   font-size: 1rem;
+  transition: 200ms ease-in-out;
+}
+
+.previous-button:focus, .previous-button:hover {
+  background-color: rgba(0, 0 ,0, 0.3);
+  box-shadow: 1vw 0 1vw rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
 }

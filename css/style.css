@@ -45,14 +45,6 @@ header a {
     opacity: .55;
 } 
 
-.carousel__track_container {
-    background: lightpink;
-    height: 100%;
-    width: 80%;
-    position: absolute;
-    overflow: hidden;
-}
-
 .carousel__track {
     padding: 0;
     margin: 0;
@@ -69,26 +61,6 @@ header a {
     width: 100%;
 }
 
-.carousel__nav {
-    background: pink;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-.carousel__indicator {
-    border: 0;
-    border-radius: 25%;
-    width: 20px;
-    height: 20px;
-    background: rgba(0, 0, 0, .3);
-    margin: 0 12px;
-}
-
-.carousel__indicator.current-slide {
-    background: rgba(0, 0, 0, .75);
-}
-
 .hero-image {
     position: relative;
     min-height: 400px;
@@ -97,7 +69,9 @@ header a {
     overflow: hidden;
     object-fit: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
+
 .hero-image .image {
     background-position: center center;
     background-repeat: no-repeat;
@@ -110,30 +84,37 @@ header a {
     left: 0;
     right: 0;
 }
+
 .hero-image h1, .hero-image h2 {
     color: #FAF9FA;
     text-shadow: 1px 1px 0px #4d9ba1, 2px 2px 1px black;
     font-size: 2rem;
 }
+
 .hero-image h1 {
     margin: 10% 4% 0;
     font-size: 3rem;
 }
+
 .hero-image h2 {
     margin: 1rem 4%;
 }
+
 main {
     width: 96%;
     margin: 1rem auto;
 }
+
 h2.subtitle {
     color: #338b95;
     font-size: 2rem;
     margin: 1rem 0;
 }
+
 main p {
     margin-bottom: 1rem;
 }
+
 main blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
@@ -143,6 +124,7 @@ main blockquote {
   font-size: 1.12rem;
   line-height: 1.2rem;
 }
+
 main blockquote:before {
   color: #ccc;
   content: open-quote;
@@ -151,6 +133,7 @@ main blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 main blockquote p {
   display: inline;
 }

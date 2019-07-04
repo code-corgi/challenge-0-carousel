@@ -32,14 +32,3 @@ nextButton.addEventListener('click', e => {
 
     moveToSlide(track, currentSlide, nextSlide);
 })
-
-//code prevButton!!
-
-// prevButton.addEventListener('click', e => {
-//     const currentSlide = track.querySelector('.current-slide');
-//     const prevSlide = currentSlide.prevElementSibling;
-//     const amountToMove = prevtSlide.style.left;
-//     track.style.transform = 'translateX(-' + amountToMove + ')';
-//     currentSlide.classList.remove('current-slide');
-//     prevSlide.classList.add('current-slide')
-// })
